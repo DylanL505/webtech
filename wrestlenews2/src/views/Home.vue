@@ -13,7 +13,7 @@
 
     <h2>What do we offer?</h2>
 
-    <h3><a href="./News.vue">Current News</a></h3>
+    <h3><a href="./News" class="currnews">Current News</a></h3>
     <p>
       Missed the latest episode of your favorite Pro Wrestling Promotion?
       We promise to have the most up to date news from EVERY Pro Wrestling Promotion.
@@ -58,5 +58,13 @@ button {
 
 button:hover {
   background-color: #2F773D;
+}
+
+.currnews {
+  color: #2F773D;
+}
+
+.currnews:hover {
+  color: #3F944F;;
 }
 </style>
