@@ -9,5 +9,7 @@
 </template>
 
 <style scoped>
-
+p {
+  font-weight: bolder;
+}
 </style>

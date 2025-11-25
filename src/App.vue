@@ -1,16 +1,29 @@
 <template>
   <div>
+
     <Header />
     <NavBar />
-      <main class="container">
-        <section class="content">
-          <Home />
-        </section>
-        <aside class="sidebar">
-          <SidebarNews />
-        </aside>
+
+    <main class="container">
+
+      <aside id="sidebarB">
+        <SidebarNews />
+      </aside>
+
+      <section>
+        <Transition name="fade" mode="out-in">
+          <router-view />
+        </Transition>
+      </section>
+
+      <aside id="sidebarA">
+        <SidebarLogin />
+      </aside>
+
     </main>
+
     <Footer />
+
   </div>
 </template>
 

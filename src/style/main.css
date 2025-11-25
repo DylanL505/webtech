@@ -8,10 +8,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #ffff;
+    background: #ffffff;
     color: #222;
 }
-
 /* ----- Header ----- */
 header {
     width: 100%;
@@ -35,6 +34,97 @@ header h3 {
     margin: 0;
     font-style: italic;
 }
+/* ---- 3 Columns ---- */
+main {
+    width: min(1200px, 95%);
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 240px 1fr 290px;
+    gap: 30px;
+}
+/* Left Sidebar */
+#sidebarA {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+#sidebarA h2 {
+    color: #2F773D;
+}
+
+#sidebarA h3 {
+    color: #3F944F;
+    text-align: left;
+}
+
+#sidebarA p {
+    font-style: italic;
+}
+
+#sidebarA button {
+    background-color: #3F944F;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+}
+
+#sidebarA button:hover {
+    background-color: #2F773D;
+}
+
+#sidebarA a {
+    color: white;
+    font-weight: bold;
+}
+
+#sidebarA .container {
+
+}
+
+/*sidebarB*/
+#sidebarB {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+#sidebarB h2, h3 {
+    text-align: center;
+    color: #2F773D;
+}
+
+#sidebarB h4 {
+    text-align: center;
+    color: #3F944F;
+}
+
+#sidebarB button {
+    background-color: #3F944F;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+}
+
+#sidebarB button:hover {
+    background-color: #2F773D;
+}
+
+#sidebarB a {
+    color: white;
+    font-weight: bold;
+}
+
+#sidebarB .container {
+    justify-content: center;
+    text-align: center;
+}
 
 /* Footer */
 footer {
@@ -47,4 +137,24 @@ footer p {
     margin: 0;
     color: white;
     font-size: .9rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.4s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    #sidebarA, #sidebarB {
+        border: none;
+        padding: 0;
+    }
+
 }
