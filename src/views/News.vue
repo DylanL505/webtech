@@ -41,5 +41,6 @@ H2 {
 p {
   font-weight: bold;
   text-align: center;
+  color: #2F773D;
 }
 </style>

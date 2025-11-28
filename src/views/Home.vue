@@ -56,6 +56,9 @@ button {
   font-size: 1rem;
   display: block;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 button:hover {

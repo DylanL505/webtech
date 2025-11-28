@@ -23,4 +23,10 @@ img {
   margin-right: auto;
   display: block;
 }
+h1 {
+  color: #2F773D;
+}
+p {
+  color: #3F944F;
+}
 </style>

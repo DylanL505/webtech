@@ -4,7 +4,7 @@
 
 <template>
 <h1>About us</h1>
-  <img src="/images/bumpnfeedlogo-green.png">
+  <img src="/images/bumpnfeedlogo-green.png" class="logo">
   <p>Bump and Feed is a dedicated pro-wrestling news and media platform built for fans who want reliable coverage,
     global insights, and a community-driven space to celebrate the sport.
     We deliver up-to-date news, event results, in-depth features,
@@ -27,4 +27,6 @@ p {
   font-weight: bold;
   color: #3F944F;
 }
+
+
 </style>

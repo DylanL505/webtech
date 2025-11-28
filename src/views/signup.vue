@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="card">
-      <h2 class="title">Login</h2>
+      <h2 class="title">Sign Up!</h2>
 
       <form v-if="!submitted" @submit.prevent="submit">
         <input
@@ -18,14 +18,15 @@
             class="input"
         />
 
-
         <div>
-          <p><router-link to="./signup" class="sgnin">Don't have an Account? Sign Up!</router-link></p>
+        <p><router-link to="./login" class="lgn">Already have an Account? Login!</router-link></p>
         </div>
 
+
         <button type="submit" class="btn">
-          Login
+          Sign Up
         </button>
+
       </form>
 
       <div v-else class="thank-you">
@@ -121,13 +122,13 @@ a {
   background-color: #2F773D;
 }
 
-.sgnin {
-text-align: center;
-color: #3F944F;
-font-weight: bold;
+.lgn{
+  text-align: center;
+  color: #3F944F;
+  font-weight: bold;
 }
 
-.sgnin:hover {
+.lgn:hover {
   text-align: center;
   color: #2F773D;
 }

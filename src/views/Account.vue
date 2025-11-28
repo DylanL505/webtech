@@ -1,14 +1,14 @@
 <template>
-  <div class="p-8 text-center text-white bg-[#3F944F] min-h-screen flex flex-col items-center justify-center space-y-6">
-    <h2 class="text-4xl font-bold">Account Page</h2>
-    <h3 class="text-2xl font-semibold">Manage Your Info</h3>
-    <p class="max-w-md text-lg">
+  <div>
+    <h2>Account Page</h2>
+    <h3>Manage Your Info</h3>
+    <h4>
       Update your account details to keep your profile current!
-    </p>
+    </h4>
 
-    <div class="container bg-white text-[#2F773D] rounded-2xl shadow-xl p-6 w-full max-w-md space-y-4">
+    <div class="input">
       <div>
-        <label class="block text-sm font-medium mb-1">Name</label>
+        <label class="name">Name</label>
         <input
             v-model="name"
             type="text"
@@ -17,7 +17,7 @@
       </div>
 
       <div>
-        <label class="block text-sm font-medium mb-1">Email</label>
+        <label class="email">Email</label>
         <input
             v-model="email"
             type="email"
@@ -48,5 +48,45 @@ function save() {
 <style scoped>
 a {
   text-decoration-line: none;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3F944F;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #3F944F;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #2F773D;
+}
+
+h2 {
+  color: #3F944F;
+  text-align: center;
+}
+h3 {
+  color: #2F773D;
+  text-align: center;
+}
+h4 {
+  color: #2F773D;
+  text-align: center;
+}
+
+.name, .email {
+  color: #2F773D;
+  font-weight: bold;
 }
 </style>

@@ -12,7 +12,7 @@
 </template>
 
 <style scoped>
-H1 {
+H1, h2 {
   color: #2F773D;
   text-align: center;
 }
