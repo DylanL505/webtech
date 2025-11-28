@@ -5,6 +5,9 @@
       <li v-for="link in navLinks" :key="link.path">
         <router-link :to="link.path" class="nav-item">{{ link.name }}</router-link>
       </li>
+      <li>
+        <router-link to="/admin" class="nav-item">Admin</router-link>
+      </li>
     </ul>
   </nav>
 </template>
@@ -47,4 +50,7 @@ ul {
     display: none;
   }
 }
+
+
+
 </style>

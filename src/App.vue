@@ -6,10 +6,6 @@
 
     <main class="container">
 
-      <aside id="sidebarB">
-        <SidebarNews />
-      </aside>
-
       <section>
         <Transition name="fade" mode="out-in">
           <router-view />
@@ -18,6 +14,10 @@
 
       <aside id="sidebarA">
         <SidebarLogin />
+      </aside>
+
+      <aside id="sidebarB">
+        <SidebarNews />
       </aside>
 
     </main>
